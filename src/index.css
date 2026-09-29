@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { background: #f3efe6; }
+body { @apply bg-cream text-ink font-body antialiased overflow-x-hidden; margin: 0; }
+:focus-visible { outline: 2px solid #14130f; outline-offset: 4px; }
+
+.will-move { will-change: transform, opacity; }
+
+/* dashed road markings that scroll with the car */
+.road-dash {
+  background-image: repeating-linear-gradient(90deg, #ff5a4f 0 48px, transparent 48px 104px);
+  background-size: 104px 3px;
+  background-repeat: repeat-x;
+}
